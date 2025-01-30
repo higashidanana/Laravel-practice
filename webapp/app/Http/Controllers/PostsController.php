@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
-    public function index() {
+    public function index() 
+    {
         return view('index');
     }
 
-    public function show() {
+    public function show() 
+    {
         $title = '詳細画面';
         return view('show', ['title' => $title]);
     }
